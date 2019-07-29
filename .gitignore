@@ -8,3 +8,11 @@ UNITY_RAYMARCH/New Unity Project.sln
 UNITY_RAYMARCH/Temp
 UNITY_RAYMARCH/BUILD
 *.pyc
+*.sln
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/.vs
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/Library
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/obj
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/Logs
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/Temp
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/Packages
+UNITY_RAYMERCH_LOW/Raymarch_LowerVersion/*.csproj
