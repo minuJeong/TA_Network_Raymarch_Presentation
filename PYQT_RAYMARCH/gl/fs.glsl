@@ -26,7 +26,13 @@ float world(vec3 p)
     c = cos(u_time * 4.0);
     s = sin(u_time * 4.0);
     tx_box_2.xy = tx_box_2.xy * mat2(-c, s, -s, -c);
-    vec3 box_extent_2 = vec3(2.5, 1.2, 0.75);
+
+    float k = cos(u_time) * 0.2 + 0.3;
+    c = cos(k * tx_box_2.y);
+    s = sin(k * tx_box_2.y);
+    mat2 twist = mat2(c, -s, s, c);
+    tx_box_2 = vec3(twist * tx_box_2.xz, tx_box_2.y);
+    vec3 box_extent_2 = vec3(2.2, 1.2, 0.75);
     float b2 = fBox(tx_box_2, box_extent_2);
 
     float box_dist = fOpUnionRound(b1, b2, 0.85);
