@@ -31,7 +31,7 @@ class Renderer(QtWidgets.QOpenGLWidget):
     def __init__(self):
         super(Renderer, self).__init__()
 
-        self.u_width, self.u_height = 512, 512
+        self.u_width, self.u_height = 1200, 800
         self.setFixedSize(self.u_width, self.u_height)
         self.setWindowFlag(QtCore.Qt.WindowStaysOnTopHint)
         self.setWindowTitle("Raymarch Example")
