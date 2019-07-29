@@ -51,3 +51,12 @@ Ray Marching에 대해 논의하기 전에, 여러 가지 의미로 해석될 �
 ----------
 
 [TA Study 문서](https://docs.google.com/document/d/1Nqh1-tDnixTG5-z5HM7-h3WI9gAJS7VtnoPm4ea8G5U)
+
+
+결과물 미리 보기
+---------------
+
+![Pikachu](https://i.ibb.co/NjSpf6Q/image.png)
+![Anim](https://i.ibb.co/KKbpWpP/image.png)
+[![Unity Example](https://i.ibb.co/F6bRrf5/image.png)](http://minujeong.com/uweb/raymarching_in_unity_2/index.html)
+![Translucent Volume](https://i.ibb.co/ZW68dV7/image.png)

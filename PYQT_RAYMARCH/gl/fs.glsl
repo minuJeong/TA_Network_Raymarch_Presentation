@@ -16,18 +16,18 @@ float world(vec3 p)
     float sphere_dist = fOpUnionRound(d1, d2, 0.5);
     
     vec3 tx_box_1 = p - vec3(-1.0, -1.5, 0.0);
-    float c = cos(u_time * 2.0);
-    float s = sin(u_time * 2.0);
+    float c = cos(u_time * 1.2);
+    float s = sin(u_time * 1.2);
     tx_box_1.xz = tx_box_1.xz * mat2(c, -s, s, c);
     vec3 box_extent_1 = vec3(1.5, 1.0, 1.0);
     float b1 = fBox(tx_box_1, box_extent_1);
 
     vec3 tx_box_2 = p - vec3(-1.2, 1.0, -0.5);
-    c = cos(u_time * 4.0);
-    s = sin(u_time * 4.0);
+    c = cos(u_time * 1.0);
+    s = sin(u_time * 1.0);
     tx_box_2.xy = tx_box_2.xy * mat2(-c, s, -s, -c);
 
-    float k = cos(u_time) * 0.2 + 0.3;
+    float k = cos(u_time) * 0.1 + 0.1;
     c = cos(k * tx_box_2.y);
     s = sin(k * tx_box_2.y);
     mat2 twist = mat2(c, -s, s, c);
