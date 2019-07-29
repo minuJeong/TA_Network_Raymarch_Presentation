@@ -68,6 +68,8 @@ class Renderer(QtWidgets.QOpenGLWidget):
                 self.u_time = self.program["u_time"]
             self.setup_uniforms(self.program, {"u_width": self.u_width, "u_height": self.u_height})
 
+            print("program recompiled.")
+
         except Exception as e:
             print(e)
             return
